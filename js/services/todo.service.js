@@ -147,13 +147,13 @@ function _createTodos() {
 
 
 function _createTodo(txt, importance) {
-    const order = gTodos.length > 0 ? (gTodos[gTodos.length  - 1].order) + 1 : 0
+    const order = gTodos.length > 0 ? (gTodos[gTodos.length - 1].order) + 1 : 0
     const todo = {
         id: _makeId(),
         txt,
         isDone: false,
         createdAt: Date.now(),
-        order: order + 1,
+        order: order,
         importance
     }
     return todo
